@@ -84,6 +84,7 @@ export default {
         background: #c00d0d;
         position: absolute;
         top: 0px;
+        padding-bottom: 2px;
         left: -40px;
         transform: skewX(335deg);
       }
