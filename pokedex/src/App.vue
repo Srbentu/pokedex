@@ -37,9 +37,13 @@ export default {
     align-items: center;
     flex-direction: column;
     @media (min-width:1200px){
-        width: 1200px;
+        width: 100vw;
         flex-direction: row;
+        
     }
+  }
+  body{
+    overflow: hidden;
   }
   .pokedex{
     &__top{
@@ -57,13 +61,13 @@ export default {
     &__left{
       width:100%;
       @media (min-width:1200px){
-
+        width: 400px;
       }
     }
     &__right{
       width:100%;
       @media (min-width:1200px){
-
+        width: 400px;
       }
     }
     &__skew{
@@ -90,6 +94,9 @@ export default {
       background-color: #c00d0d;
       display: flex;
       justify-content: center;
+      @media (min-width:1200px){
+        width:400px;
+      }
     }
     &__img{
       width: 300px;
