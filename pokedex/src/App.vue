@@ -40,14 +40,14 @@ export default {
     &__top{
     height: 100px;
     background-color: #8b0000;
-    width: 600px;
+    width: 400px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     position: relative;
     }
     &__skew{
-      width: 300px;
+      width: 100px;
       height: 50px;
       position: absolute;
       background-color: #c00d0d;
@@ -155,7 +155,7 @@ export default {
       background: radial-gradient(#fbfb9b, #fbfb05);
     }
 }
-@keyframes yellowLight {
+@keyframes greenLight {
     0%{
       background: radial-gradient(#b0fb7b, #50fb05);
     }
