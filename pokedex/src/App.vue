@@ -31,20 +31,40 @@ export default {
 
 <style lang="scss">
   #app{
-    width: 1200px;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    @media (min-width:1200px){
+        width: 1200px;
+        flex-direction: row;
+    }
   }
   .pokedex{
     &__top{
     height: 100px;
     background-color: #8b0000;
-    width: 400px;
+    width: 100%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     position: relative;
+      @media (min-width:1200px){
+        width: 400px;
+      }
+    }
+    &__left{
+      width:100%;
+      @media (min-width:1200px){
+
+      }
+    }
+    &__right{
+      width:100%;
+      @media (min-width:1200px){
+
+      }
     }
     &__skew{
       width: 100px;

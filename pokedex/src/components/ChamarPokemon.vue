@@ -34,6 +34,7 @@ export default {
                 this.pokemonName = this.pokemon.name 
                 this.pokemonUrl = this.pokemon.sprites.front_default
                 this.pokemonTypes = this.pokemon.types
+                console.log(this.pokemon)
             })
         },
         atribuiNome(){
