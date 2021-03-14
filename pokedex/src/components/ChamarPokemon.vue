@@ -1,16 +1,16 @@
 <template>
     <div>
-        <input type="text" v-model="temp">
-        <button @click="chamaPokemon">Vai</button>
-        <p>{{pokemonName}}</p>
-        <p>{{pokemonTypes}}</p>
-        <img v-show="pokemonUrl" :src="pokemonUrl" alt="">
+        
+        <div class="pokedex__img">
+            <img  v-show="pokemonUrl" :src="pokemonUrl" alt="">
+        </div>
+        
         <div v-for="(type) in pokemonTypes" :key="type.id">
             <p v-for="(name) in type" :key="name.id">{{name.name}}</p>
         </div>
-        <div v-for="(name) in pokemonTypes.type" :key="name.id">
-            <p>{{name.name}}</p>
-        </div>
+        <input type="text" v-model="temp">
+        <button @click="chamaPokemon">Vai</button>
+        <p>{{pokemonName}}</p>
     </div>
 </template>
 
